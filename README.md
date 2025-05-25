@@ -87,13 +87,13 @@ Right-click on the test class name and Choose Run tests - Say right click `Creat
 | `UpdateBookingTests`         | Updates existing bookings using data from `updated_booking.csv` |
 
 ### Test Data
-Test data is maintained in src/test/resources/csv as CSV files:
+Test data for CreateBookingTests and UpdateBookingTests are maintained in src/test/resources/csv as CSV files:
 
 create_booking.csv – Data for creating bookings (with testcase name column)
 
 updated_booking.csv – Data for updating bookings (with testcase name column)
 
-You can modify these files to add more test coverage. Find the appropriate CSV file you wish to modify and update as appropriate.
+You can modify these files to add more test coverage in the future. Find the appropriate CSV file you wish to modify and update as appropriate.
 You can open the CSV file in a text editor, Excel, or your preferred editing software.
 Excel aligns the columns and makes it easy to edit.
 Inspect the column headers. You will need to create a row filling the appropriate values.

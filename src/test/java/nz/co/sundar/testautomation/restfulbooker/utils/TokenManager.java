@@ -44,25 +44,30 @@ public class TokenManager {
      * @throws RuntimeException if the HTTP response code is not 200.
      */
     private static String generateToken() {
-        String username = ConfigReader.getProperty("username");
-        String password = ConfigReader.getProperty("password");
-        String authPayload = String.format("""
-            {
-                "username" : "%s",
-                "password" : "%s"
-            }
-            """, username, password);
-
-        Response response = RestAssured.given()
-                .contentType(ContentType.JSON)
-                .body(authPayload)
-                .post(AUTH_URL);
+        Response response = generateTokenResponse(
+                ConfigReader.getProperty("username"),
+                ConfigReader.getProperty("password")
+        );
 
         if (response.statusCode() == 200) {
             return response.jsonPath().getString("token");
         } else {
             throw new RuntimeException("Failed to generate token. Status code: " + response.statusCode());
         }
+    }
+
+    public static Response generateTokenResponse(String username, String password) {
+        String authPayload = String.format("""
+        {
+            "username" : "%s",
+            "password" : "%s"
+        }
+        """, username, password);
+
+        return RestAssured.given()
+                .contentType(ContentType.JSON)
+                .body(authPayload)
+                .post(AUTH_URL);
     }
 }
 
