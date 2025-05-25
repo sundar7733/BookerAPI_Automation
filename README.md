@@ -79,6 +79,7 @@ Right-click on the test class name and Choose Run tests - Say right click `Creat
 ### Types of Tests
 | **Test Class**               | **Description**                                                 |
 |------------------------------|-----------------------------------------------------------------|
+| `AuthTokenTests`             | Validates token generation and error handling for auth requests |
 | `CreateBookingTests`         | Creates bookings with data from `create_booking.csv`            |
 | `DeleteBookingTests`         | Deletes a created booking                                       |
 | `GetAllBookingIdsTests`      | Validates fetching all booking Ids                              |

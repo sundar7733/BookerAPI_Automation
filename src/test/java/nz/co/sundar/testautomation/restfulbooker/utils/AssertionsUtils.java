@@ -164,9 +164,54 @@ public class AssertionsUtils {
         try {
             Assertions.assertEquals(expectedStatusCode, response.getStatusCode(), "Validating http status code");
             Assertions.assertEquals(expectedErrorMessage, response.getBody().asString(), "Validating error message");
+
             reportManager.logPass("PASS: Error response validated successfully. Status Code: " + expectedStatusCode + ", Message: " + expectedErrorMessage);
         } catch (Exception e) {
             reportManager.logFail("FAIL: Error response validation failed. " + e.getMessage());
+            throw new RuntimeException(e);
+
+        }
+    }
+    /**
+     * Asserts the authentication error response from an API call.
+     *
+     * @param response            The API response to validate
+     * @param expectedStatusCode  The expected HTTP status code
+     * @param expectedErrorMessage The expected error message in the response body
+     */
+    public static void assertAuthErrorResponse(Response response, int expectedStatusCode, String expectedErrorMessage) {
+        try {
+            Assertions.assertEquals(expectedStatusCode, response.getStatusCode(), "Validating http status code");
+            Assertions.assertEquals(expectedErrorMessage, response.jsonPath().getString("reason"), "Validating error message");
+
+            reportManager.logPass("PASS: Error response validated successfully. Status Code: " + expectedStatusCode + ", Message: " + expectedErrorMessage);
+        } catch (Exception e) {
+            reportManager.logFail("FAIL: Error response validation failed. " + e.getMessage());
+            throw new RuntimeException(e);
+
+        }
+    }
+    /**
+     * Asserts the authentication token response from an API call.
+     *
+     * @param response            The API response to validate
+     * @param expectedStatusCode  The expected HTTP status code
+     */
+    public static void assertAuthValidResponse(Response response, int expectedStatusCode) {
+        try {
+            Assertions.assertEquals(expectedStatusCode, response.getStatusCode(), "Validating http status code");
+
+            String actualtoken = response.jsonPath().getString("token");
+            //For security reasons, we will not log the full token for reporting
+            String maskedToken = actualtoken.substring(0, 4) + "****" + actualtoken.substring(actualtoken.length() - 4);
+
+            Assertions.assertEquals(actualtoken, response.jsonPath().getString("token"), "Validating token message");
+            Assertions.assertNotNull(actualtoken, "Token should not be null");
+            Assertions.assertFalse(actualtoken.trim().isEmpty(), "Token should not be empty");
+
+            reportManager.logPass("PASS: Token response validated successfully. Status Code: " + expectedStatusCode + ", Actual Token : " + maskedToken);
+        } catch (Exception e) {
+            reportManager.logFail("FAIL: Token response validation failed. " + e.getMessage());
             throw new RuntimeException(e);
 
         }
