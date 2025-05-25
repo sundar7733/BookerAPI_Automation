@@ -14,12 +14,6 @@ Thumbs.db
 *.iml
 out/
 
-# Ignore Eclipse files (optional)
-.project
-.classpath
-.settings/
-
 # Ignore test reports if generated
-allure-results/
-allure-report/
 test-output/
+/target/
