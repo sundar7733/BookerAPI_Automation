@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/src/test/java/base/TestBase.java;C:/MyProjects/restfulBookerAPI-automation/src/test/java/payloads/BookingPayloads.java;C:/MyProjects/restfulBookerAPI-automation/src/test/java/tests/CreateBookingTests.java;C:/MyProjects/restfulBookerAPI-automation/src/test/java/tests/DeleteBookingTests.java;C:/MyProjects/restfulBookerAPI-automation/src/test/java/tests/GetAllBookingIdsTests.java;C:/MyProjects/restfulBookerAPI-automation/src/test/java/tests/GetSpecificJobBookingIdTests.java;C:/MyProjects/restfulBookerAPI-automation/src/test/java/tests/UpdateBookingTests.java;C:/MyProjects/restfulBookerAPI-automation/src/test/java/utils/BookingUtils.java;C:/MyProjects/restfulBookerAPI-automation/src/test/java/utils/TokenManager.java;C:/MyProjects/restfulBookerAPI-automation/target/ExtentReports.html;C:/MyProjects/restfulBookerAPI-automation/README.md" />
+  </component>
+</project>

@@ -1,0 +1,3548 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>BookerAPI Test Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">BookerAPI Test Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 25, 2025 11:45:42 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateBooking Test #1 - Valid Booking Test</p>
+            <p class="text-sm">
+              <span>11:45:42 am</span> / <span>00:00:02:751</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CreateBooking Test #1 - Valid Booking Test</h5>
+<span class='badge badge-success'>05.25.2025 11:45:42 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:45 am</span>
+<span class='badge badge-default'>00:00:02:751</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          Request Method: POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          Booking ID is valid: 2492
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          PASS: Validating First Name | Expected: sundar, Actual: sundar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: ram, Actual: ram
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 115, Actual: 115
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: false, Actual: false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-03-01, Actual: 2025-03-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-05-01, Actual: 2025-05-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Dinner, Actual: Dinner
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          Booking created with ID: 2492
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          Response: {"bookingid":2492,"booking":{"firstname":"sundar","lastname":"ram","totalprice":115,"depositpaid":false,"bookingdates":{"checkin":"2025-03-01","checkout":"2025-05-01"},"additionalneeds":"Dinner"}}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:45 am</td>
+        <td>
+          Booking created with ID: 2492
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateBooking Test #2 - Empty FirstName Test</p>
+            <p class="text-sm">
+              <span>11:45:45 am</span> / <span>00:00:01:133</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CreateBooking Test #2 - Empty FirstName Test</h5>
+<span class='badge badge-success'>05.25.2025 11:45:45 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:46 am</span>
+<span class='badge badge-default'>00:00:01:133</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          Request Method: POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          Booking ID is valid: 2504
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          PASS: Validating First Name | Expected: , Actual: 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: ram, Actual: ram
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 110, Actual: 110
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-03-01, Actual: 2025-03-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-07-01, Actual: 2025-07-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Lunch, Actual: Lunch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          Booking created with ID: 2504
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          Response: {"bookingid":2504,"booking":{"firstname":"","lastname":"ram","totalprice":110,"depositpaid":true,"bookingdates":{"checkin":"2025-03-01","checkout":"2025-07-01"},"additionalneeds":"Lunch"}}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:46 am</td>
+        <td>
+          Booking created with ID: 2504
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateBooking Test #3 - Empty Last Name Test</p>
+            <p class="text-sm">
+              <span>11:45:46 am</span> / <span>00:00:01:075</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CreateBooking Test #3 - Empty Last Name Test</h5>
+<span class='badge badge-success'>05.25.2025 11:45:46 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:47 am</span>
+<span class='badge badge-default'>00:00:01:075</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          Request Method: POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          Booking ID is valid: 2513
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          PASS: Validating First Name | Expected: sundar, Actual: sundar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: , Actual: 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 100, Actual: 100
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: false, Actual: false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-01-01, Actual: 2025-01-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Breakfast, Actual: Breakfast
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          Booking created with ID: 2513
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          Response: {"bookingid":2513,"booking":{"firstname":"sundar","lastname":"","totalprice":100,"depositpaid":false,"bookingdates":{"checkin":"2025-01-01","checkout":"2025-12-01"},"additionalneeds":"Breakfast"}}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:47 am</td>
+        <td>
+          Booking created with ID: 2513
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateBooking Test #4 - Empty FirstName and Last Name Test</p>
+            <p class="text-sm">
+              <span>11:45:47 am</span> / <span>00:00:01:082</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CreateBooking Test #4 - Empty FirstName and Last Name Test</h5>
+<span class='badge badge-success'>05.25.2025 11:45:47 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:48 am</span>
+<span class='badge badge-default'>00:00:01:082</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          Request Method: POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          Booking ID is valid: 2519
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          PASS: Validating First Name | Expected: , Actual: 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: , Actual: 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 100, Actual: 100
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-04-01, Actual: 2025-04-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-07-01, Actual: 2025-07-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Breakfast, Actual: Breakfast
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          Booking created with ID: 2519
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          Response: {"bookingid":2519,"booking":{"firstname":"","lastname":"","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"2025-04-01","checkout":"2025-07-01"},"additionalneeds":"Breakfast"}}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:48 am</td>
+        <td>
+          Booking created with ID: 2519
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateBooking Test #5 - Negative Price Test</p>
+            <p class="text-sm">
+              <span>11:45:48 am</span> / <span>00:00:01:068</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CreateBooking Test #5 - Negative Price Test</h5>
+<span class='badge badge-success'>05.25.2025 11:45:48 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:49 am</span>
+<span class='badge badge-default'>00:00:01:068</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          Request Method: POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          Booking ID is valid: 2533
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          PASS: Validating First Name | Expected: sundar, Actual: sundar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: ram, Actual: ram
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: -1, Actual: -1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-01-01, Actual: 2025-01-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Lunch, Actual: Lunch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          Booking created with ID: 2533
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          Response: {"bookingid":2533,"booking":{"firstname":"sundar","lastname":"ram","totalprice":-1,"depositpaid":true,"bookingdates":{"checkin":"2025-01-01","checkout":"2025-12-01"},"additionalneeds":"Lunch"}}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:49 am</td>
+        <td>
+          Booking created with ID: 2533
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateBooking Test #6 - Empty Additional Needs Test</p>
+            <p class="text-sm">
+              <span>11:45:49 am</span> / <span>00:00:01:137</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CreateBooking Test #6 - Empty Additional Needs Test</h5>
+<span class='badge badge-success'>05.25.2025 11:45:49 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:50 am</span>
+<span class='badge badge-default'>00:00:01:137</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          Request Method: POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          Booking ID is valid: 2543
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          PASS: Validating First Name | Expected: John, Actual: John
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: Doe, Actual: Doe
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 100, Actual: 100
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: false, Actual: false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-01-01, Actual: 2025-01-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: , Actual: 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          Booking created with ID: 2543
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          Response: {"bookingid":2543,"booking":{"firstname":"John","lastname":"Doe","totalprice":100,"depositpaid":false,"bookingdates":{"checkin":"2025-01-01","checkout":"2025-12-01"},"additionalneeds":""}}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:50 am</td>
+        <td>
+          Booking created with ID: 2543
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateBooking Test #7 - Invalid Check-In Date Test</p>
+            <p class="text-sm">
+              <span>11:45:50 am</span> / <span>00:00:01:069</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CreateBooking Test #7 - Invalid Check-In Date Test</h5>
+<span class='badge badge-success'>05.25.2025 11:45:50 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:52 am</span>
+<span class='badge badge-default'>00:00:01:069</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          Request Method: POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          Booking ID is valid: 2553
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          PASS: Validating First Name | Expected: Jim, Actual: Jim
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: Brown, Actual: Brown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 100, Actual: 100
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 1900-01-01, Actual: 1900-01-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Dinner, Actual: Dinner
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          Booking created with ID: 2553
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          Response: {"bookingid":2553,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"1900-01-01","checkout":"2025-12-01"},"additionalneeds":"Dinner"}}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:52 am</td>
+        <td>
+          Booking created with ID: 2553
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateBooking Test #8 - Invalid Check-Out Date Test</p>
+            <p class="text-sm">
+              <span>11:45:52 am</span> / <span>00:00:01:068</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CreateBooking Test #8 - Invalid Check-Out Date Test</h5>
+<span class='badge badge-success'>05.25.2025 11:45:52 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:53 am</span>
+<span class='badge badge-default'>00:00:01:068</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          Request Method: POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          Booking ID is valid: 2562
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          PASS: Validating First Name | Expected: Jim, Actual: Jim
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: Brown, Actual: Brown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 100, Actual: 100
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 1900-12-01, Actual: 1900-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Dinner, Actual: Dinner
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          Booking created with ID: 2562
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          Response: {"bookingid":2562,"booking":{"firstname":"Jim","lastname":"Brown","totalprice":100,"depositpaid":true,"bookingdates":{"checkin":"2025-12-01","checkout":"1900-12-01"},"additionalneeds":"Dinner"}}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:53 am</td>
+        <td>
+          Booking created with ID: 2562
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateBooking Test #9 - Invalid Additonal Needs Test</p>
+            <p class="text-sm">
+              <span>11:45:53 am</span> / <span>00:00:01:065</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">CreateBooking Test #9 - Invalid Additonal Needs Test</h5>
+<span class='badge badge-success'>05.25.2025 11:45:53 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:54 am</span>
+<span class='badge badge-default'>00:00:01:065</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          Request Method: POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          Booking ID is valid: 2572
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          PASS: Validating First Name | Expected: Sundar, Actual: Sundar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: ram, Actual: ram
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 90, Actual: 90
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: false, Actual: false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-01-01, Actual: 2025-01-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: INVALID, Actual: INVALID
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          Booking created with ID: 2572
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          Response: {"bookingid":2572,"booking":{"firstname":"Sundar","lastname":"ram","totalprice":90,"depositpaid":false,"bookingdates":{"checkin":"2025-01-01","checkout":"2025-12-01"},"additionalneeds":"INVALID"}}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:54 am</td>
+        <td>
+          Booking created with ID: 2572
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">createNullNameBookingTest</p>
+            <p class="text-sm">
+              <span>11:45:54 am</span> / <span>00:00:01:059</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">createNullNameBookingTest</h5>
+<span class='badge badge-success'>05.25.2025 11:45:54 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:55 am</span>
+<span class='badge badge-default'>00:00:01:059</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:55 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:55 am</td>
+        <td>
+          Request Method: POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:55 am</td>
+        <td>
+          PASS: Error response validated successfully. Status Code: 500, Message: Internal Server Error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:55 am</td>
+        <td>
+          Response: Internal Server Error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:55 am</td>
+        <td>
+          Booking not created with expected response: Internal Server Error
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">deleteWithNoAuthTest</p>
+            <p class="text-sm">
+              <span>11:45:55 am</span> / <span>00:00:01:236</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">deleteWithNoAuthTest</h5>
+<span class='badge badge-success'>05.25.2025 11:45:55 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:56 am</span>
+<span class='badge badge-default'>00:00:01:236</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:56 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:56 am</td>
+        <td>
+          Request Method: DELETE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:56 am</td>
+        <td>
+          PASS: Error response validated successfully. Status Code: 403, Message: Forbidden
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:56 am</td>
+        <td>
+          Booking not deleted with expected response: Forbidden
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">deleteEmptyBookingIdTest</p>
+            <p class="text-sm">
+              <span>11:45:56 am</span> / <span>00:00:02:555</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">deleteEmptyBookingIdTest</h5>
+<span class='badge badge-success'>05.25.2025 11:45:56 am</span>
+<span class='badge badge-danger'>05.25.2025 11:45:59 am</span>
+<span class='badge badge-default'>00:00:02:555</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:59 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:59 am</td>
+        <td>
+          Request Method: DELETE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:45:59 am</td>
+        <td>
+          PASS: Error response validated successfully. Status Code: 404, Message: Not Found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:45:59 am</td>
+        <td>
+          Booking not deleted with expected response: Not Found
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">deleteBookingTwiceTest</p>
+            <p class="text-sm">
+              <span>11:45:59 am</span> / <span>00:00:03:221</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">deleteBookingTwiceTest</h5>
+<span class='badge badge-success'>05.25.2025 11:45:59 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:02 am</span>
+<span class='badge badge-default'>00:00:03:221</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:01 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2624
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:01 am</td>
+        <td>
+          Request Method: DELETE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:01 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 201, Actual: 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:01 am</td>
+        <td>
+          Booking deleted successfully for ID: 2624
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:01 am</td>
+        <td>
+          Booking deleted successfully for ID: 2624
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:02 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2624
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:02 am</td>
+        <td>
+          Request Method: DELETE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:02 am</td>
+        <td>
+          PASS: Error response validated successfully. Status Code: 405, Message: Method Not Allowed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:02 am</td>
+        <td>
+          Booking not deleted with expected response: Method Not Allowed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">deleteInvalidBookingIdTest</p>
+            <p class="text-sm">
+              <span>11:46:02 am</span> / <span>00:00:01:056</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">deleteInvalidBookingIdTest</h5>
+<span class='badge badge-success'>05.25.2025 11:46:02 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:03 am</span>
+<span class='badge badge-default'>00:00:01:056</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:03 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/abc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:03 am</td>
+        <td>
+          Request Method: DELETE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:03 am</td>
+        <td>
+          PASS: Error response validated successfully. Status Code: 405, Message: Method Not Allowed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:03 am</td>
+        <td>
+          Invalid Booking not deleted with expected response: Method Not Allowed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">deleteBookingTest</p>
+            <p class="text-sm">
+              <span>11:46:03 am</span> / <span>00:00:02:139</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">deleteBookingTest</h5>
+<span class='badge badge-success'>05.25.2025 11:46:03 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:05 am</span>
+<span class='badge badge-default'>00:00:02:139</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:04 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2659
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:04 am</td>
+        <td>
+          Request Method: DELETE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:05 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 201, Actual: 201
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:05 am</td>
+        <td>
+          Booking deleted successfully for ID: 2659
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:05 am</td>
+        <td>
+          Booking deleted successfully for ID: 2659
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getAllBookingIdsTest</p>
+            <p class="text-sm">
+              <span>11:46:05 am</span> / <span>00:00:01:344</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getAllBookingIdsTest</h5>
+<span class='badge badge-success'>05.25.2025 11:46:05 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:07 am</span>
+<span class='badge badge-default'>00:00:01:344</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:06 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:06 am</td>
+        <td>
+          Request Method: GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:07 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:07 am</td>
+        <td>
+          PASS: Validating bookingId list not null | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:07 am</td>
+        <td>
+          PASS: Validating bookingId list not empty | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:07 am</td>
+        <td>
+          PASS: Booking ID list is not empty. Found 1856 booking IDs.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:07 am</td>
+        <td>
+          Fetched All 1856 booking IDs
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getAllBookingIdsTestWithNoHeaders</p>
+            <p class="text-sm">
+              <span>11:46:07 am</span> / <span>00:00:01:284</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getAllBookingIdsTestWithNoHeaders</h5>
+<span class='badge badge-success'>05.25.2025 11:46:07 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:08 am</span>
+<span class='badge badge-default'>00:00:01:284</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:08 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:08 am</td>
+        <td>
+          Request Method: GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:08 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:08 am</td>
+        <td>
+          PASS: Validating bookingId list not null | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:08 am</td>
+        <td>
+          PASS: Validating bookingId list not empty | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:08 am</td>
+        <td>
+          PASS: Booking ID list is not empty. Found 1861 booking IDs.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:08 am</td>
+        <td>
+          Fetched All 1861 booking IDs
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getSpecificBookingIdTest</p>
+            <p class="text-sm">
+              <span>11:46:08 am</span> / <span>00:00:02:169</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getSpecificBookingIdTest</h5>
+<span class='badge badge-success'>05.25.2025 11:46:08 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:10 am</span>
+<span class='badge badge-default'>00:00:02:169</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:09 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2703
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:09 am</td>
+        <td>
+          Request Method: GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:10 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:10 am</td>
+        <td>
+          PASS: Validating First Name | Expected: Jim, Actual: Jim
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:10 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: Brown, Actual: Brown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:10 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 111, Actual: 111
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:10 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:10 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2023-01-01, Actual: 2023-01-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:10 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2023-01-02, Actual: 2023-01-02
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:10 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Breakfast, Actual: Breakfast
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:10 am</td>
+        <td>
+          Validating BookingId: 2703
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:10 am</td>
+        <td>
+          Response field validation for Specific Booking ID 2703 passed successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:10 am</td>
+        <td>
+          Response field validation for Specific Booking ID 2703 completed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getInvalidBookingIdTest</p>
+            <p class="text-sm">
+              <span>11:46:10 am</span> / <span>00:00:01:100</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getInvalidBookingIdTest</h5>
+<span class='badge badge-success'>05.25.2025 11:46:10 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:11 am</span>
+<span class='badge badge-default'>00:00:01:100</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:11 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/abc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:11 am</td>
+        <td>
+          Request Method: GET
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:11 am</td>
+        <td>
+          PASS: Error response validated successfully. Status Code: 404, Message: Not Found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:11 am</td>
+        <td>
+          Invalid Booking not updated with expected response: Not Found
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">updateInvalidBookingIdTest</p>
+            <p class="text-sm">
+              <span>11:46:11 am</span> / <span>00:00:01:068</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">updateInvalidBookingIdTest</h5>
+<span class='badge badge-success'>05.25.2025 11:46:11 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:12 am</span>
+<span class='badge badge-default'>00:00:01:068</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:12 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/abc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:12 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:12 am</td>
+        <td>
+          PASS: Error response validated successfully. Status Code: 405, Message: Method Not Allowed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:12 am</td>
+        <td>
+          Invalid Booking not updated with expected response: Method Not Allowed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBooking Test #1 - Valid Booking Test - Update Price</p>
+            <p class="text-sm">
+              <span>11:46:12 am</span> / <span>00:00:02:146</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">UpdateBooking Test #1 - Valid Booking Test - Update Price</h5>
+<span class='badge badge-success'>05.25.2025 11:46:12 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:14 am</span>
+<span class='badge badge-default'>00:00:02:146</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2741
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          Updated BookingId: 2741
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          PASS: Validating First Name | Expected: sundar, Actual: sundar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: ram, Actual: ram
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 110, Actual: 110
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: false, Actual: false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-03-01, Actual: 2025-03-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-05-01, Actual: 2025-05-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Dinner, Actual: Dinner
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          Booking updated successfully for ID: 2741
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:14 am</td>
+        <td>
+          Response field validation for Booking ID 2741 passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBooking Test #2 - Empty FirstName Test - Update FirstName</p>
+            <p class="text-sm">
+              <span>11:46:14 am</span> / <span>00:00:02:294</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">UpdateBooking Test #2 - Empty FirstName Test - Update FirstName</h5>
+<span class='badge badge-success'>05.25.2025 11:46:14 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:17 am</span>
+<span class='badge badge-default'>00:00:02:294</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2767
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          Updated BookingId: 2767
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          PASS: Validating First Name | Expected: Jack, Actual: Jack
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: Malley, Actual: Malley
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 110, Actual: 110
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-03-01, Actual: 2025-03-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-07-01, Actual: 2025-07-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Lunch, Actual: Lunch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          Booking updated successfully for ID: 2767
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:17 am</td>
+        <td>
+          Response field validation for Booking ID 2767 passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBooking Test #3 - Empty Last Name Test - Update Last Name Test</p>
+            <p class="text-sm">
+              <span>11:46:17 am</span> / <span>00:00:02:109</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">UpdateBooking Test #3 - Empty Last Name Test - Update Last Name Test</h5>
+<span class='badge badge-success'>05.25.2025 11:46:17 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:19 am</span>
+<span class='badge badge-default'>00:00:02:109</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2778
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          Updated BookingId: 2778
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          PASS: Validating First Name | Expected: Brian, Actual: Brian
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: Reed, Actual: Reed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 100, Actual: 100
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: false, Actual: false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-01-01, Actual: 2025-01-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Breakfast, Actual: Breakfast
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          Booking updated successfully for ID: 2778
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:19 am</td>
+        <td>
+          Response field validation for Booking ID 2778 passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBooking Test #4 - Empty FirstName and Last Name Test - Update First and Last Name</p>
+            <p class="text-sm">
+              <span>11:46:19 am</span> / <span>00:00:02:176</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">UpdateBooking Test #4 - Empty FirstName and Last Name Test - Update First and Last Name</h5>
+<span class='badge badge-success'>05.25.2025 11:46:19 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:21 am</span>
+<span class='badge badge-default'>00:00:02:176</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2798
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          Updated BookingId: 2798
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          PASS: Validating First Name | Expected: Jeff, Actual: Jeff
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: Chang, Actual: Chang
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 100, Actual: 100
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-04-01, Actual: 2025-04-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-07-01, Actual: 2025-07-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Breakfast, Actual: Breakfast
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          Booking updated successfully for ID: 2798
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:21 am</td>
+        <td>
+          Response field validation for Booking ID 2798 passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBooking Test #5 - Negative Price Test - Update to Positive Price</p>
+            <p class="text-sm">
+              <span>11:46:21 am</span> / <span>00:00:02:130</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">UpdateBooking Test #5 - Negative Price Test - Update to Positive Price</h5>
+<span class='badge badge-success'>05.25.2025 11:46:21 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:23 am</span>
+<span class='badge badge-default'>00:00:02:130</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2818
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          Updated BookingId: 2818
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          PASS: Validating First Name | Expected: sundar, Actual: sundar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: ram, Actual: ram
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 50, Actual: 50
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-01-01, Actual: 2025-01-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Lunch, Actual: Lunch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          Booking updated successfully for ID: 2818
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:23 am</td>
+        <td>
+          Response field validation for Booking ID 2818 passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBooking Test #6 - Empty Additional Needs Test - Update Additional Needs</p>
+            <p class="text-sm">
+              <span>11:46:23 am</span> / <span>00:00:02:129</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">UpdateBooking Test #6 - Empty Additional Needs Test - Update Additional Needs</h5>
+<span class='badge badge-success'>05.25.2025 11:46:23 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:25 am</span>
+<span class='badge badge-default'>00:00:02:129</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2834
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          Updated BookingId: 2834
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          PASS: Validating First Name | Expected: John, Actual: John
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: Doe, Actual: Doe
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 100, Actual: 100
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: false, Actual: false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-01-01, Actual: 2025-01-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Breakfast, Actual: Breakfast
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          Booking updated successfully for ID: 2834
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:25 am</td>
+        <td>
+          Response field validation for Booking ID 2834 passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBooking Test #7 - Invalid Check-In Date Test - Update to Valid Check-In Date</p>
+            <p class="text-sm">
+              <span>11:46:25 am</span> / <span>00:00:02:132</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">UpdateBooking Test #7 - Invalid Check-In Date Test - Update to Valid Check-In Date</h5>
+<span class='badge badge-success'>05.25.2025 11:46:25 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:27 am</span>
+<span class='badge badge-default'>00:00:02:132</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2858
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          Updated BookingId: 2858
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          PASS: Validating First Name | Expected: Jim, Actual: Jim
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: Brown, Actual: Brown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 100, Actual: 100
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-01-01, Actual: 2025-01-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Dinner, Actual: Dinner
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          Booking updated successfully for ID: 2858
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:27 am</td>
+        <td>
+          Response field validation for Booking ID 2858 passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBooking Test #8 - Invalid Check-Out Date Test - Update to Valid Check-Out Date</p>
+            <p class="text-sm">
+              <span>11:46:27 am</span> / <span>00:00:02:122</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">UpdateBooking Test #8 - Invalid Check-Out Date Test - Update to Valid Check-Out Date</h5>
+<span class='badge badge-success'>05.25.2025 11:46:27 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:30 am</span>
+<span class='badge badge-default'>00:00:02:122</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2872
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          Updated BookingId: 2872
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          PASS: Validating First Name | Expected: Jim, Actual: Jim
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: Brown, Actual: Brown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 100, Actual: 100
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: true, Actual: true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Dinner, Actual: Dinner
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          Booking updated successfully for ID: 2872
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:30 am</td>
+        <td>
+          Response field validation for Booking ID 2872 passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBooking Test #9 - Invalid Additonal Needs Test - Update Valid Additional Needs</p>
+            <p class="text-sm">
+              <span>11:46:30 am</span> / <span>00:00:02:160</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">UpdateBooking Test #9 - Invalid Additonal Needs Test - Update Valid Additional Needs</h5>
+<span class='badge badge-success'>05.25.2025 11:46:30 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:32 am</span>
+<span class='badge badge-default'>00:00:02:160</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2893
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          Updated BookingId: 2893
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          PASS: Validating http status code | Expected: 200, Actual: 200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          PASS: Validating First Name | Expected: Sundar, Actual: Sundar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          PASS: Validating Last Name | Expected: ram, Actual: ram
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          PASS: Validating Total Price | Expected: 90, Actual: 90
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          PASS: Validating Deposit Paid | Expected: false, Actual: false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          PASS: Validating Check-in date | Expected: 2025-01-01, Actual: 2025-01-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          PASS: Validating Check-out date | Expected: 2025-12-01, Actual: 2025-12-01
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          PASS: Validating Additionalneeds | Expected: Lunch, Actual: Lunch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          Booking updated successfully for ID: 2893
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:32 am</td>
+        <td>
+          Response field validation for Booking ID 2893 passed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">updateEmptyBookingIdTest</p>
+            <p class="text-sm">
+              <span>11:46:32 am</span> / <span>00:00:01:065</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">updateEmptyBookingIdTest</h5>
+<span class='badge badge-success'>05.25.2025 11:46:32 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:33 am</span>
+<span class='badge badge-default'>00:00:01:065</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:33 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:33 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:33 am</td>
+        <td>
+          PASS: Error response validated successfully. Status Code: 404, Message: Not Found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:33 am</td>
+        <td>
+          Booking not Updated with expected response: Not Found
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBookingWithNoAuthTest</p>
+            <p class="text-sm">
+              <span>11:46:33 am</span> / <span>00:00:02:133</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">UpdateBookingWithNoAuthTest</h5>
+<span class='badge badge-success'>05.25.2025 11:46:33 am</span>
+<span class='badge badge-danger'>05.25.2025 11:46:35 am</span>
+<span class='badge badge-default'>00:00:02:133</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:35 am</td>
+        <td>
+          Request URL: https://restful-booker.herokuapp.com/booking/2921
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:35 am</td>
+        <td>
+          Request Method: PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:46:35 am</td>
+        <td>
+          PASS: Error response validated successfully. Status Code: 403, Message: Forbidden
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:46:35 am</td>
+        <td>
+          Booking not updated with expected response: Forbidden
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 25, 2025 11:45:42 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 25, 2025 11:46:35 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>31</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>31</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='56%'><b>180</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>137</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"CreateBooking Test #1 - Valid Booking Test":2.751,"CreateBooking Test #2 - Empty FirstName Test":1.133,"CreateBooking Test #3 - Empty Last Name Test":1.075,"CreateBooking Test #4 - Empty FirstName and Last Name Test":1.082,"CreateBooking Test #5 - Negative Price Test":1.068,"CreateBooking Test #6 - Empty Additional Needs Test":1.137,"CreateBooking Test #7 - Invalid Check-In Date Test":1.069,"CreateBooking Test #8 - Invalid Check-Out Date Test":1.068,"CreateBooking Test #9 - Invalid Additonal Needs Test":1.065,"createNullNameBookingTest":1.059,"deleteWithNoAuthTest":1.236,"deleteEmptyBookingIdTest":2.555,"deleteBookingTwiceTest":3.221,"deleteInvalidBookingIdTest":1.056,"deleteBookingTest":2.139,"getAllBookingIdsTest":1.344,"getAllBookingIdsTestWithNoHeaders":1.284,"getSpecificBookingIdTest":2.169,"getInvalidBookingIdTest":1.1,"updateInvalidBookingIdTest":1.068,"UpdateBooking Test #1 - Valid Booking Test - Update Price":2.146,"UpdateBooking Test #2 - Empty FirstName Test - Update FirstName":2.294,"UpdateBooking Test #3 - Empty Last Name Test - Update Last Name Test":2.109,"UpdateBooking Test #4 - Empty FirstName and Last Name Test - Update First and Last Name":2.176,"UpdateBooking Test #5 - Negative Price Test - Update to Positive Price":2.13,"UpdateBooking Test #6 - Empty Additional Needs Test - Update Additional Needs":2.129,"UpdateBooking Test #7 - Invalid Check-In Date Test - Update to Valid Check-In Date":2.132,"UpdateBooking Test #8 - Invalid Check-Out Date Test - Update to Valid Check-Out Date":2.122,"UpdateBooking Test #9 - Invalid Additonal Needs Test - Update Valid Additional Needs":2.16,"updateEmptyBookingIdTest":1.065,"UpdateBookingWithNoAuthTest":2.133
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Test Start Time</td>
+<td>2025-05-25 11:45:42 NZST</td>
+</tr>
+<tr>
+<td>Test End Time</td>
+<td>2025-05-25 11:45:55 NZST</td>
+</tr>
+<tr>
+<td>Total Execution Time</td>
+<td>00:00:13</td>
+</tr>
+<tr>
+<td>Test Start Time</td>
+<td>2025-05-25 11:45:42 NZST</td>
+</tr>
+<tr>
+<td>Test End Time</td>
+<td>2025-05-25 11:46:05 NZST</td>
+</tr>
+<tr>
+<td>Total Execution Time</td>
+<td>00:00:23</td>
+</tr>
+<tr>
+<td>Test Start Time</td>
+<td>2025-05-25 11:45:42 NZST</td>
+</tr>
+<tr>
+<td>Test End Time</td>
+<td>2025-05-25 11:46:08 NZST</td>
+</tr>
+<tr>
+<td>Total Execution Time</td>
+<td>00:00:26</td>
+</tr>
+<tr>
+<td>Test Start Time</td>
+<td>2025-05-25 11:45:42 NZST</td>
+</tr>
+<tr>
+<td>Test End Time</td>
+<td>2025-05-25 11:46:11 NZST</td>
+</tr>
+<tr>
+<td>Total Execution Time</td>
+<td>00:00:29</td>
+</tr>
+<tr>
+<td>Test Start Time</td>
+<td>2025-05-25 11:45:42 NZST</td>
+</tr>
+<tr>
+<td>Test End Time</td>
+<td>2025-05-25 11:46:35 NZST</td>
+</tr>
+<tr>
+<td>Total Execution Time</td>
+<td>00:00:53</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 31,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 180,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 137
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: nz.co.sundar.testautomation.restfulbooker.tests.UpdateBookingTests
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.708 s - in nz.co.sundar.testautomation.restfulbooker.tests.UpdateBookingTests

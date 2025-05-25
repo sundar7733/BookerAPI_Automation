@@ -1,0 +1,10 @@
+testcase,firstname,lastname,totalprice,depositpaid,checkin,checkout,additionalneeds
+Valid Booking Test,sundar,ram,115,false,2025-03-01,2025-05-01,Dinner
+Empty FirstName Test,,ram,110,true,2025-03-01,2025-07-01,Lunch
+Empty Last Name Test,sundar,,100,false,2025-01-01,2025-12-01,Breakfast
+Empty FirstName and Last Name Test,,,100,true,2025-04-01,2025-07-01,Breakfast
+Negative Price Test,sundar,ram,-1,true,2025-01-01,2025-12-01,Lunch
+Empty Additional Needs Test,John,Doe,100,false,2025-01-01,2025-12-01,
+Invalid Check-In Date Test,Jim,Brown,100,true,1900-01-01,2025-12-01,Dinner
+Invalid Check-Out Date Test,Jim,Brown,100,true,2025-12-01,1900-12-01,Dinner
+Invalid Additonal Needs Test,Sundar,ram,90,false,2025-01-01,2025-12-01,INVALID
