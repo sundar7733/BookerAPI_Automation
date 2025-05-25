@@ -71,13 +71,13 @@ public class BookingUtils {
     }
 
     public static Response updateSpecificBooking(int bookingId,
-                                             String firstName,
-                                             String lastName,
-                                             int totalPrice,
-                                             boolean depositPaid,
-                                             String checkin,
-                                             String checkout,
-                                             String additionalNeeds) {
+                                                 String firstName,
+                                                 String lastName,
+                                                 int totalPrice,
+                                                 boolean depositPaid,
+                                                 String checkin,
+                                                 String checkout,
+                                                 String additionalNeeds) {
         String bookingIdResourcePath = bookingResourcePath + "/" + bookingId;
 
         String payload = BookingPayloads.createBookingPayload(
@@ -104,17 +104,8 @@ public class BookingUtils {
         return response;
     }
 
-
     public static Response getSpecificBookingId(int bookingId) {
-        String bookingIdResourcePath = bookingResourcePath + "/" + bookingId;
-
-        return given()
-                .contentType(ContentType.JSON)
-                .when()
-                .get(bookingIdResourcePath)
-                .then()
-                .extract()
-                .response();
+        return getSpecificBookingId(String.valueOf(bookingId));
     }
     public static Response getSpecificBookingId(String bookingId) {
         String bookingIdResourcePath = bookingResourcePath + "/" + bookingId;
@@ -150,7 +141,7 @@ public class BookingUtils {
         Response response = TokenManager.sendDeleteRequest(token, bookingIdResourcePath);
         // Retry logic for 403 Forbidden
         if (response.statusCode() == 403) {
-           // Token expired or invalid. Refreshing token and retrying...
+            // Token expired or invalid. Refreshing token and retrying...
             TokenManager.invalidateToken(); // Reset token
             token = TokenManager.getToken(); // Get a new one
             response = TokenManager.sendDeleteRequest(token, bookingIdResourcePath);
@@ -193,7 +184,31 @@ public class BookingUtils {
     }
 
     public static Response updateInvalidBookingId(String bookingId) {
-        return deleteTestBookingId(String.valueOf(bookingId), TokenManager.getToken());
+        return updateEmptyBookingId(String.valueOf(bookingId), TokenManager.getToken());
     }
+    public static Response updateEmptyBookingId(String bookingId) {
+        return updateEmptyBookingId(String.valueOf(bookingId), TokenManager.getToken());
+    }
+    public static Response updateEmptyBookingId(String bookingId, String token) {
+        String bookingIdResourcePath = bookingResourcePath + "/" + bookingId;
+        String payload = BookingPayloads.createInvalidBookingPayload(
+                "John",
+                "Doe",
+                "totalPrice",   // invalid totalPrice
+                "depositPaid",          // invalid depositPaid
+                "invalid check-in",    // invalid checkin
+                "invalid check-out",  // invalid checkout
+                "Breakfast"    // additionalNeeds
+        );
+        Response response = TokenManager.sendUpdateRequest(token, bookingIdResourcePath,payload);
+        // Retry logic for 403 Forbidden
+        if (response.statusCode() == 403) {
+            // Token expired or invalid. Refreshing token and retrying...
+            TokenManager.invalidateToken(); // Reset token
+            token = TokenManager.getToken(); // Get a new one
+            response = TokenManager.sendUpdateRequest(token, bookingIdResourcePath,payload);
+        }
 
+        return response;
+    }
 }

@@ -53,12 +53,12 @@ public class UpdateBookingTests extends TestBase {
 
         return arguments.stream();
     }
-/**
+    /**
      * Parses a CSV record into a BookingData object.
      *
      * @param record The CSVRecord to parse
      * @return A BookingData object containing the parsed values
- **/
+     **/
     public static BookingData parseCSVRecord(CSVRecord record) {
         return new BookingData(
                 record.get("testcase"),
@@ -71,7 +71,7 @@ public class UpdateBookingTests extends TestBase {
                 record.get("additionalneeds")
         );
     }
-/**
+    /**
      * Test case to update an existing booking with new details and validate the response.
      * <p>
      * Steps performed:
@@ -114,7 +114,7 @@ public class UpdateBookingTests extends TestBase {
         reportManager.getTest().info("Booking updated successfully for ID: " + bookingId);
         reportManager.logInfo("Response field validation for Booking ID " + bookingId + " passed successfully.");
     }
-/**
+    /**
      * Test case to update a booking with an empty booking ID.
      * <p>
      * This test verifies that the API correctly handles an attempt to update a booking with an empty ID,
@@ -124,7 +124,7 @@ public class UpdateBookingTests extends TestBase {
     @Test
     public void updateEmptyBookingIdTest() {
         String bookingId = ""; // Empty booking ID
-        Response response = BookingUtils.updateInvalidBookingId(bookingId);
+        Response response = BookingUtils.updateEmptyBookingId(bookingId);
 
         logRequestForBookingId(method, bookingId);
 
@@ -136,7 +136,7 @@ public class UpdateBookingTests extends TestBase {
         }
         reportManager.logInfo("Booking not Updated with expected response: " + response.asString());
     }
-/**
+    /**
      * Test case to update a booking with an invalid booking ID.
      * <p>
      * This test verifies that the API correctly handles an attempt to update a booking with an invalid ID,
@@ -159,16 +159,16 @@ public class UpdateBookingTests extends TestBase {
         reportManager.logInfo("Invalid Booking not updated with expected response: " + response.asString());
 
     }
-/**
+    /**
      * Test case to update a booking without providing an authentication token.
      * <p>
      * This test verifies that the API correctly handles an attempt to update a booking without authentication,
      * expecting a 403 Forbidden response.
      * </p>
-    */
+     */
     @Test
     public void UpdateBookingWithNoAuthTest() {
-              // Step 1: Create a valid booking first
+        // Step 1: Create a valid booking first
         Response response = BookingUtils.createTestBooking();
         BookingResponse bookingResponse = PojoUtils.convertJsonToBookingResponse(response.asString());
 
@@ -187,4 +187,3 @@ public class UpdateBookingTests extends TestBase {
         reportManager.logInfo("Booking not updated with expected response: " + response.asString());
     }
 }
-
