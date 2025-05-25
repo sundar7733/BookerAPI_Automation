@@ -3,8 +3,6 @@ package nz.co.sundar.testautomation.restfulbooker.utils;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import java.time.Duration;
@@ -51,14 +49,7 @@ public class ReportManager {
         }
         return instance;
     }
-    /**
-     * Public static method to flush the report using the singleton instance.
-     */
-    public static void flush() {
-        if (instance != null) {
-            instance.flushReport();
-        }
-    }
+
     /**
      * Creates a new test entry in the report.
      *
