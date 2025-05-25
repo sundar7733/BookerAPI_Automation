@@ -1,5 +1,4 @@
 # Restful Booker API Automation Framework
-
 This project automates API testing for the [Restful Booker](https://restful-booker.herokuapp.com/) service using:
 
 - Java
