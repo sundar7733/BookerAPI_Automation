@@ -8,6 +8,9 @@ This project automates API testing for the [Restful Booker](https://restful-book
 - CSV
 - Extent Reports (custom reporting)
 ---
+For calling the API, we use the [Restful Booker API](https://restful-booker.herokuapp.com/) which is a public API, username and password are required for UPDATE and DELETE operations.
+Username and password can be found in https://restful-booker.herokuapp.com/apidoc/index.html#api-Auth-CreateToken
+
 ## Project Structure
 src
 └── test
