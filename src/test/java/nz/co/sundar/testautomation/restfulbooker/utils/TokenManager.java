@@ -4,6 +4,8 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+import static io.restassured.RestAssured.given;
+
 /**
  * Utility class responsible for managing authentication tokens for accessing the
  * Restful Booker API. It retrieves credentials from a properties file and provides
@@ -64,10 +66,30 @@ public class TokenManager {
         }
         """, username, password);
 
-        return RestAssured.given()
+        return given()
                 .contentType(ContentType.JSON)
                 .body(authPayload)
                 .post(AUTH_URL);
+    }
+
+    public static void invalidateToken() {
+        token = null;
+    }
+
+    public static Response sendUpdateRequest(String token, String bookingIdResourcePath, String payload) {
+        return given()
+                .header("Cookie", "token=" + token)
+                .contentType(ContentType.JSON)
+                .log().body()
+                .body(payload)
+                .put(bookingIdResourcePath);
+    }
+
+    public static Response sendDeleteRequest(String token, String bookingIdResourcePath) {
+        return given()
+                .header("Cookie", "token=" + token)
+                .contentType(ContentType.JSON)
+                .delete(bookingIdResourcePath);
     }
 }
 

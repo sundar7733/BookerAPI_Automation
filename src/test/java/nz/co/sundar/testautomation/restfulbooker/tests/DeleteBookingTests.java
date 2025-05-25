@@ -124,6 +124,7 @@ public class DeleteBookingTests extends TestBase {
     public void deleteInvalidBookingIdTest() {
         String bookingId = "abc"; // Invalid booking ID
         Response response = BookingUtils.deleteTestBookingId(bookingId);
+
         logRequestForBookingId(method, bookingId);
 
         try {
@@ -142,8 +143,9 @@ public class DeleteBookingTests extends TestBase {
      */
     @Test
     public void deleteWithNoAuthTest() {
-        String bookingId = "1"; // Assuming booking ID 1 exists for testing purposes
-        Response response = BookingUtils.deleteTestBookingId(bookingId, "");
+        int bookingId = 1; // Assuming booking ID 1 exists for testing purposes
+        Response response = BookingUtils.deleteBookingWithNoAuthTest(bookingId, "");
+
         logRequestForBookingId(method, bookingId);
         try {
             AssertionsUtils.assertErrorResponse(response, 403, "Forbidden");

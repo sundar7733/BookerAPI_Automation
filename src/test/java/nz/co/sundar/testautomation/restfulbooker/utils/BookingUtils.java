@@ -23,7 +23,7 @@ public class BookingUtils {
         String payload = BookingPayloads.createBookingPayload(
                 firstName,
                 lastName,
-                111,   // totalPrice
+                111,  // totalPrice
                 true,          // depositPaid
                 "2023-01-01",  // checkin
                 "2023-01-02",  // checkout
@@ -51,6 +51,24 @@ public class BookingUtils {
                 .when()
                 .post(bookingResourcePath);
     }
+    public static Response createInvalidBooking() {
+
+        String payload = BookingPayloads.createInvalidBookingPayload(
+                "John",
+                "Doe",
+                "totalPrice",   // invalid totalPrice
+                "depositPaid",          // invalid depositPaid
+                "invalid check-in",    // invalid checkin
+                "invalid check-out",  // invalid checkout
+                "Breakfast"    // additionalNeeds
+        );
+
+        return given()
+                .contentType(ContentType.JSON)
+                .log().body()
+                .body(payload)
+                .post(bookingResourcePath);
+    }
 
     public static Response updateSpecificBooking(int bookingId,
                                              String firstName,
@@ -74,12 +92,16 @@ public class BookingUtils {
 
         String token = TokenManager.getToken();
 
-        return given()
-                .header("Cookie", "token=" + token)
-                .contentType(ContentType.JSON)
-                .log().body()
-                .body(payload)
-                .put(bookingIdResourcePath);
+        Response response = TokenManager.sendUpdateRequest(token, bookingIdResourcePath, payload);
+        // Retry logic for 403 Forbidden
+        if (response.statusCode() == 403) {
+            // Token expired or invalid. Refreshing token and retrying...
+            TokenManager.invalidateToken(); // Reset token
+            token = TokenManager.getToken(); // Get a new one
+            response = TokenManager.sendUpdateRequest(token, bookingIdResourcePath, payload);
+        }
+
+        return response;
     }
 
 
@@ -125,16 +147,39 @@ public class BookingUtils {
     public static Response deleteTestBookingId(String bookingId, String token) {
         String bookingIdResourcePath = bookingResourcePath + "/" + bookingId;
 
+        Response response = TokenManager.sendDeleteRequest(token, bookingIdResourcePath);
+        // Retry logic for 403 Forbidden
+        if (response.statusCode() == 403) {
+           // Token expired or invalid. Refreshing token and retrying...
+            TokenManager.invalidateToken(); // Reset token
+            token = TokenManager.getToken(); // Get a new one
+            response = TokenManager.sendDeleteRequest(token, bookingIdResourcePath);
+        }
+
+        return response;
+    }
+
+    /** As token is being refreshed in the middle of tests, this method is used to test the No Auth scenario when calling
+     * UpdateTestBookingId with NoAuth 403 validation specifically.
+     *
+     */
+    public static Response UpdateBookingWithNoAuthTest(int bookingId, String token) {
+        String bookingIdResourcePath = bookingResourcePath + "/" + bookingId;
+
         return given()
                 .header("Cookie", "token=" + token)
                 .contentType(ContentType.JSON)
                 .when()
-                .delete(bookingIdResourcePath)
+                .put(bookingIdResourcePath)
                 .then()
                 .extract()
                 .response();
     }
-    public static Response UpdateBookingWithNoAuthTest(int bookingId, String token) {
+    /** As token is being refreshed in the middle of tests, this method is used to test the No Auth scenario when calling
+     * DeleteTestBookingId with NoAuth.
+     *
+     */
+    public static Response deleteBookingWithNoAuthTest(int bookingId, String token) {
         String bookingIdResourcePath = bookingResourcePath + "/" + bookingId;
 
         return given()
@@ -146,7 +191,9 @@ public class BookingUtils {
                 .extract()
                 .response();
     }
+
     public static Response updateInvalidBookingId(String bookingId) {
         return deleteTestBookingId(String.valueOf(bookingId), TokenManager.getToken());
     }
+
 }

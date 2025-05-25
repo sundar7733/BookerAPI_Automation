@@ -125,6 +125,7 @@ public class UpdateBookingTests extends TestBase {
     public void updateEmptyBookingIdTest() {
         String bookingId = ""; // Empty booking ID
         Response response = BookingUtils.updateInvalidBookingId(bookingId);
+
         logRequestForBookingId(method, bookingId);
 
         try {
@@ -146,6 +147,7 @@ public class UpdateBookingTests extends TestBase {
     public void updateInvalidBookingIdTest() {
         String bookingId = "abc"; // Invalid booking ID
         Response response = BookingUtils.updateInvalidBookingId(bookingId);
+
         logRequestForBookingId(method, bookingId);
 
         try {
@@ -175,6 +177,7 @@ public class UpdateBookingTests extends TestBase {
         // Step 2: Update the booking using the ID
         response = BookingUtils.UpdateBookingWithNoAuthTest(bookingId, " ");
         logRequestForBookingId(method, bookingId);
+
         try {
             AssertionsUtils.assertErrorResponse(response, 403, "Forbidden");
         } catch (AssertionError e) {

@@ -16,6 +16,21 @@ public class BookingPayloads {
                 }
                 """.formatted(normaliseString(firstname), normaliseString(lastname), totalPrice, depositPaid, normaliseString(checkin), normaliseString(checkout), normaliseString(additionalNeeds));
     }
+    public static String createInvalidBookingPayload(String firstname, String lastname, String totalPrice, String depositPaid, String checkin, String checkout, String additionalNeeds) {
+        return """
+                {
+                    "firstname": %s,
+                    "lastname": %s,
+                    "totalprice": "%s",
+                    "depositpaid": "%s",
+                    "bookingdates": {
+                        "checkin": %s,
+                        "checkout": %s
+                    },
+                    "additionalneeds": %s
+                }
+                """.formatted(normaliseString(firstname), normaliseString(lastname), totalPrice, depositPaid, normaliseString(checkin), normaliseString(checkout), normaliseString(additionalNeeds));
+    }
 
     private static String normaliseString(String str) {
         if (str == null) {

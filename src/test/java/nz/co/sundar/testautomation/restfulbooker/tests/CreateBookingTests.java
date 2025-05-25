@@ -150,4 +150,69 @@ public class CreateBookingTests extends TestBase {
         reportManager.logInfo("Booking not created with expected response: " + response.asString());
     }
 
+    @Test
+    public void createInvalidDepositTest() {
+
+        Response response = BookingUtils.createInvalidBooking();
+
+        logRequestDetails(method);
+
+        boolean depositPaid = response.jsonPath().getBoolean("booking.depositpaid");
+
+        try {
+        Assertions.assertTrue(depositPaid, "Expected depositpaid as true. Actual: " + depositPaid);
+
+        reportManager.logPass("Deposit paid is true as expected. Actual" + depositPaid);
+        } catch (AssertionError e) {
+            reportManager.logFail("Deposit paid is not true: " + e.getMessage());
+            Assertions.fail("Deposit paid is not true: " + e.getMessage());
+        }
+
+        reportManager.logInfo("Invalid Deposit Paid Booking Test completed");
+    }
+
+    @Test
+    public void createInvalidPriceTest() {
+
+        Response response = BookingUtils.createInvalidBooking();
+
+        logRequestDetails(method);
+
+        Object totalPrice = response.jsonPath().get("booking.totalprice");
+
+        try {
+            Assertions.assertNull(totalPrice, "Expected totalprice as null. Actual: " + totalPrice);
+
+            reportManager.logPass("Total price is null as expected: Actual " + totalPrice);
+        } catch (AssertionError e) {
+            reportManager.logFail("Total price is not null: " + e.getMessage());
+            Assertions.fail("Total price is not null: " + e.getMessage());
+        }
+
+        reportManager.logInfo("Invalid Total price Test completed");
+    }
+
+    @Test
+    public void createInvalidCheckInCheckOutDateTest() {
+
+        Response response = BookingUtils.createInvalidBooking();
+
+        logRequestDetails(method);
+
+        String invalidcheckin = response.jsonPath().getString("booking.bookingdates.checkin");
+        String invalidcheckout = response.jsonPath().getString("booking.bookingdates.checkout");
+
+        try {
+            Assertions.assertEquals("0NaN-aN-aN", invalidcheckin, "Expected invalid checkin value");
+            Assertions.assertEquals("0NaN-aN-aN", invalidcheckout, "Expected invalid checkout value");
+
+            reportManager.logPass("Invalid check-in response as  expected: Actual " + invalidcheckin);
+            reportManager.logPass("Invalid check-out response as  expected: Actual " + invalidcheckout);
+        } catch (AssertionError e) {
+            reportManager.logFail("Invalid check-in/check-out response not as expected" + e.getMessage());
+            Assertions.fail("Invalid check-in/check-out response not as expected :" + e.getMessage());
+        }
+
+        reportManager.logInfo("Invalid check-in/check-out Test completed");
+    }
 }
