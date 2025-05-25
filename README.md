@@ -48,7 +48,7 @@ src
     ```bash
    mvn clean install
    ```
-4. **Run the tests**
+4. **Configure API Credentials**
    Add the following VM options in your IDE or run configuration:
     ```
    username and password for the API under src/test/resources/config.properties:
@@ -56,15 +56,6 @@ src
    password={{password for the API}}
    Username and password can be found in https://restful-booker.herokuapp.com/apidoc/index.html#api-Auth-CreateToken
    ```
-   You can run the tests using Maven. Use the following command:
-   ```bash
-   mvn test
-   ```
-### Reporting
-    The project uses Extent Reports for custom reporting. After running the tests, an HTML report will be generated in the `target/test-results` directory.
-**View the reports**
-    Open the `BookerAPITestResults.html` file in a web browser to view the test results.
-
 ### Run the tests Using IntelliJ IDEA
 **For All Tests:**
 1. Open the project in IntelliJ IDEA.
@@ -74,9 +65,16 @@ src
 5. Double-click on `test` to run all tests.
 6. Alternatively, you can run all tests by right-clicking on the `tests` package and selecting `Run 'Tests in 'tests''`.
 
-   **For Individual Test Class:**
+**For Individual Test Class:**
 
- Right-click on the test class name and Choose Run tests - Say right click `CreateBookingTests.java` file and select `Run 'CreateBookingTests'`.
+Right-click on the test class name and Choose Run tests - Say right click `CreateBookingTests.java` file and select `Run 'CreateBookingTests'`.
+
+### Reporting
+    The project uses Extent Reports for custom reporting. After running the tests, an HTML report will be generated in the `target/test-results` directory.
+**View the reports**
+    Open the `BookerAPITestResults.html` file in a web browser to view the test results.
+
+
 
 ### Types of Tests
 | **Test Class**               | **Description**                                                 |
