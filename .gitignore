@@ -1,0 +1,25 @@
+# Ignore Maven target folder
+target/
+
+# Ignore test result files
+*.log
+*.tmp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IntelliJ IDEA files
+.idea/
+*.iml
+out/
+
+# Ignore Eclipse files (optional)
+.project
+.classpath
+.settings/
+
+# Ignore test reports if generated
+allure-results/
+allure-report/
+test-output/

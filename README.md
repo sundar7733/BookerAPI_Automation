@@ -10,6 +10,8 @@ This project automates API testing for the [Restful Booker](https://restful-book
 For calling the API, we use the [Restful Booker API](https://restful-booker.herokuapp.com/) which is a public API, username and password are required for UPDATE and DELETE operations.
 As of present state, Username and password can be found in https://restful-booker.herokuapp.com/apidoc/index.html#api-Auth-CreateToken
 
+**Important**: Do not commit username and password values back to the repository.
+
 ## Project Structure
 src
 └── test
