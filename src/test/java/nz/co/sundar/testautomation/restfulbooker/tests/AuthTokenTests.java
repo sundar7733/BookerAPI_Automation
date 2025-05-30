@@ -7,9 +7,16 @@ import nz.co.sundar.testautomation.restfulbooker.utils.ConfigReader;
 import nz.co.sundar.testautomation.restfulbooker.utils.TokenManager;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Test class responsible for validating authentication token generation
+ * */
 
 public class AuthTokenTests extends TestBase {
-
+    /**
+     * Test case to validate the generation of an invalid authentication token
+     * <p>
+     *     This test verifies that an authentication token cannot be generated with incorrect credentials.
+     */
     @Test
     public void InvalidAuthToken() {
 
@@ -26,6 +33,12 @@ public class AuthTokenTests extends TestBase {
       }
 
     }
+    /**
+     * Test case to validate the generation of a valid authentication token
+     * <p>
+     * This test verifies that a valid authentication token can be generated using the correct credentials.
+     * </p>
+     */
     @Test
     public void ValidAuthToken() {
 

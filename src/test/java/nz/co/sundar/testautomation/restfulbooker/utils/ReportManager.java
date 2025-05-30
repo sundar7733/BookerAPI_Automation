@@ -97,6 +97,8 @@ public class ReportManager {
      * @param message the message to log
      */
     public void logPass(String message) {
+        /* Commented out the MarkupHelper line as it is not used in the current version of ExtentReports. Can be used if needed for
+        color text to appear on the report.*/
        // test.pass(MarkupHelper.createLabel(message, ExtentColor.GREEN));
         test.pass(message);
     }

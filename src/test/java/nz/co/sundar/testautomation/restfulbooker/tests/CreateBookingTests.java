@@ -52,8 +52,8 @@ public class CreateBookingTests extends TestBase {
         List<CSVRecord> createRecords = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(createReader).getRecords();
 
         List<Arguments> arguments = new ArrayList<>();
-        for (int i = 0; i < createRecords.size(); i++) {
-            BookingData createData = parseCSVRecord(createRecords.get(i));
+        for (CSVRecord createRecord : createRecords) {
+            BookingData createData = parseCSVRecord(createRecord);
             arguments.add(Arguments.of(createData));
         }
         return arguments.stream();
@@ -124,9 +124,10 @@ public class CreateBookingTests extends TestBase {
                 createData.firstname, createData.lastname, createData.totalprice,
                 createData.depositpaid, createData.checkin, createData.checkout, createData.additionalneeds);
 
+        reportManager.logInfo("Create booking response: " + response.asString());
         reportManager.getTest().info("Booking created with ID: " + bookingId);
-        reportManager.logInfo("Response: " + response.asString());
-        reportManager.getTest().info("Booking created with ID: " + bookingResponse.getBookingid());
+        reportManager.logInfo("Response field validation for Booking ID " + bookingId + " completed successfully.");
+
 
 
     }
@@ -146,10 +147,12 @@ public class CreateBookingTests extends TestBase {
 
         AssertionsUtils.assertErrorResponse(response, 500, "Internal Server Error");
 
-        reportManager.logInfo("Response: " + response.asString());
         reportManager.logInfo("Booking not created with expected response: " + response.asString());
     }
 
+    /**
+     * Test case to create a booking with invalid deposit value.
+     */
     @Test
     public void createInvalidDepositTest() {
 
@@ -162,7 +165,7 @@ public class CreateBookingTests extends TestBase {
         try {
         Assertions.assertTrue(depositPaid, "Expected depositpaid as true. Actual: " + depositPaid);
 
-        reportManager.logPass("Deposit paid is true as expected. Actual" + depositPaid);
+        reportManager.logPass("Deposit paid is true as expected. Actual: " + depositPaid);
         } catch (AssertionError e) {
             reportManager.logFail("Deposit paid is not true: " + e.getMessage());
             Assertions.fail("Deposit paid is not true: " + e.getMessage());
@@ -171,6 +174,13 @@ public class CreateBookingTests extends TestBase {
         reportManager.logInfo("Invalid Deposit Paid Booking Test completed");
     }
 
+    /**
+     * Test case to create a booking with invalid total price.
+     * <p>
+     * This test verifies that the API correctly handles a request with an invalid total price,
+     * expecting the total price to be null in the response.
+     * </p>
+     */
     @Test
     public void createInvalidPriceTest() {
 
@@ -191,7 +201,13 @@ public class CreateBookingTests extends TestBase {
 
         reportManager.logInfo("Invalid Total price Test completed");
     }
-
+/**
+     * Test case to create a booking with invalid check-in and check-out dates.
+     * <p>
+     * This test verifies that the API correctly handles a request with invalid date formats,
+     * expecting the check-in and check-out dates to be in an invalid format.
+     * </p>
+     */
     @Test
     public void createInvalidCheckInCheckOutDateTest() {
 

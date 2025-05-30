@@ -51,6 +51,7 @@ public class BookingUtils {
                 .when()
                 .post(bookingResourcePath);
     }
+
     public static Response createInvalidBooking() {
 
         String payload = BookingPayloads.createInvalidBookingPayload(
@@ -107,6 +108,7 @@ public class BookingUtils {
     public static Response getSpecificBookingId(int bookingId) {
         return getSpecificBookingId(String.valueOf(bookingId));
     }
+
     public static Response getSpecificBookingId(String bookingId) {
         String bookingIdResourcePath = bookingResourcePath + "/" + bookingId;
 
@@ -118,6 +120,7 @@ public class BookingUtils {
                 .extract()
                 .response();
     }
+
     public static Response getAllBookingIds(boolean includeHeaders) {
 
         return (includeHeaders ? given().contentType(ContentType.JSON) : given())
@@ -127,6 +130,7 @@ public class BookingUtils {
                 .extract()
                 .response();
     }
+
     public static Response deleteTestBookingId(int bookingId) {
         return deleteTestBookingId(String.valueOf(bookingId));
     }
@@ -150,9 +154,9 @@ public class BookingUtils {
         return response;
     }
 
-    /** As token is being refreshed in the middle of tests, this method is used to test the No Auth scenario when calling
+    /**
+     * As token is being refreshed in the middle of tests, this method is used to test the No Auth scenario when calling
      * UpdateTestBookingId with NoAuth 403 validation specifically.
-     *
      */
     public static Response UpdateBookingWithNoAuthTest(int bookingId, String token) {
         String bookingIdResourcePath = bookingResourcePath + "/" + bookingId;
@@ -166,9 +170,10 @@ public class BookingUtils {
                 .extract()
                 .response();
     }
-    /** As token is being refreshed in the middle of tests, this method is used to test the No Auth scenario when calling
+
+    /**
+     * As token is being refreshed in the middle of tests, this method is used to test the No Auth scenario when calling
      * DeleteTestBookingId with NoAuth.
-     *
      */
     public static Response deleteBookingWithNoAuthTest(int bookingId, String token) {
         String bookingIdResourcePath = bookingResourcePath + "/" + bookingId;
@@ -186,9 +191,11 @@ public class BookingUtils {
     public static Response updateInvalidBookingId(String bookingId) {
         return updateEmptyBookingId(String.valueOf(bookingId), TokenManager.getToken());
     }
+
     public static Response updateEmptyBookingId(String bookingId) {
         return updateEmptyBookingId(String.valueOf(bookingId), TokenManager.getToken());
     }
+
     public static Response updateEmptyBookingId(String bookingId, String token) {
         String bookingIdResourcePath = bookingResourcePath + "/" + bookingId;
         String payload = BookingPayloads.createInvalidBookingPayload(
@@ -200,15 +207,16 @@ public class BookingUtils {
                 "invalid check-out",  // invalid checkout
                 "Breakfast"    // additionalNeeds
         );
-        Response response = TokenManager.sendUpdateRequest(token, bookingIdResourcePath,payload);
+        Response response = TokenManager.sendUpdateRequest(token, bookingIdResourcePath, payload);
         // Retry logic for 403 Forbidden
         if (response.statusCode() == 403) {
             // Token expired or invalid. Refreshing token and retrying...
             TokenManager.invalidateToken(); // Reset token
             token = TokenManager.getToken(); // Get a new one
-            response = TokenManager.sendUpdateRequest(token, bookingIdResourcePath,payload);
+            response = TokenManager.sendUpdateRequest(token, bookingIdResourcePath, payload);
         }
 
         return response;
     }
-}
+
+   }

@@ -94,6 +94,8 @@ public class UpdateBookingTests extends TestBase {
         BookingResponse bookingResponse = PojoUtils.convertJsonToBookingResponse(response.asString());
         int bookingId = bookingResponse.getBookingid();
 
+        reportManager.logInfo("Create booking response: " + response.asString());
+        reportManager.logInfo("BookingId created: " + bookingId);
         // Step 2: Update the booking using the ID
 
         response = BookingUtils.updateSpecificBooking(bookingId, updateData.firstname, updateData.lastname, updateData.totalprice,
@@ -111,6 +113,7 @@ public class UpdateBookingTests extends TestBase {
                 updateData.firstname, updateData.lastname, updateData.totalprice,
                 updateData.depositpaid, updateData.checkin, updateData.checkout, updateData.additionalneeds);
 
+        reportManager.logInfo("Update booking response: " + response.asString());
         reportManager.getTest().info("Booking updated successfully for ID: " + bookingId);
         reportManager.logInfo("Response field validation for Booking ID " + bookingId + " passed successfully.");
     }
